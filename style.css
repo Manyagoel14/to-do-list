@@ -47,7 +47,7 @@ header{
 
 .floating-btn {
     position: fixed;
-    bottom: 20px;
+    bottom: 30px;
     right: 20px;
     z-index: 1000;
   }
@@ -66,9 +66,10 @@ header{
 
 .apply-btn{
   align-items: end;
-  background-color: orange;
+  background-color: #ffc107;
   border-radius: 5px;
   border-width: 0;
+  color:white;
   
 }
 
@@ -79,4 +80,10 @@ header{
   color: white;
 }
 
+.help{
+  background-color: #1a5d61;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
 

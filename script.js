@@ -6,7 +6,7 @@ function createTaskElement(taskData, index) {
 
     // Set background color based on priority
     const priorityColors = {
-        low: "#808cfd",
+        low: "#59d434",
         moderate: "#ffd700",
         high: "#ff6b6b"
     };
@@ -14,17 +14,17 @@ function createTaskElement(taskData, index) {
 
     // Effort level indicators
     const effortDiamonds = {
-        easy: `<i class="bi bi-diamond-fill ps-2" style="color: ${diamondColor}"></i>
-               <i class="bi bi-diamond" style="color: ${diamondColor}"></i>
-               <i class="bi bi-diamond" style="color: ${diamondColor}"></i>`,
+        easy: `<i class="bi bi-pencil-fill ps-2" style="color: ${diamondColor}"></i>
+               <i class="bi bi-pencil-fill" style="color: ${diamondColor}"></i>
+               <i class="bi bi-pencil" style="color: ${diamondColor}"></i>`,
 
-        medium: `<i class="bi bi-diamond-fill ps-2" style="color: ${diamondColor}"></i>
-                 <i class="bi bi-diamond-fill" style="color: ${diamondColor}"></i>
-                 <i class="bi bi-diamond" style="color: ${diamondColor}"></i>`,
+        medium: `<i class="bi bi-pencil-fill ps-2" style="color: ${diamondColor}"></i>
+                 <i class="bi bi-pencil-fill" style="color: ${diamondColor}"></i>
+                 <i class="bi bi-pencil" style="color: ${diamondColor}"></i>`,
 
-        hard: `<i class="bi bi-diamond-fill ps-2" style="color: ${diamondColor}"></i>
-               <i class="bi bi-diamond-fill" style="color: ${diamondColor}"></i>
-               <i class="bi bi-diamond-fill" style="color: ${diamondColor}"></i>`
+        hard: `<i class="bi bi-pencil-fill ps-2" style="color: ${diamondColor}"></i>
+               <i class="bi bi-pencil-fill" style="color: ${diamondColor}"></i>
+               <i class="bi bi-pencil-fill" style="color: ${diamondColor}"></i>`
     };
 
     if (taskData.completed) {
