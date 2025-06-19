@@ -1,0 +1,82 @@
+body{
+  background-color: #b1e1e4;
+}
+header{
+  background-color: #144a4d;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: center;
+}
+.float a{
+  text-decoration: none;
+}
+.float {
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+  background-color: #1a5d61;
+}
+.form-check-input{
+  border-color: black;
+}
+.filter-btn {
+    position: fixed;
+    z-index: 1000;
+    right: 20px;
+    top: 110px;
+  }
+.dropdown-content {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  right: 20px;
+  top: 145px;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  background-color: #144a4d;
+  color: white;
+}
+
+.filter-btn + .dropdown-content {
+  top: 100%;
+  left: 0;
+}
+
+.floating-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+
+.delete{
+  font-size: 1.75rem;
+}
+
+.edit{
+  font-size: 1.75rem;
+}
+.task-container {
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.apply-btn{
+  align-items: end;
+  background-color: orange;
+  border-radius: 5px;
+  border-width: 0;
+  
+}
+
+.dropdown-btn{
+  border-radius: 5px;
+  border-width: 0px;
+  background-color: #144a4d;
+  color: white;
+}
+
+

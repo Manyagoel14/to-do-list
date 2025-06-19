@@ -1,0 +1,117 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href=".\style.css" />
+</head>
+
+<body>
+    
+        <header class="border-bottom lh-1 py-2">
+            <div class="row flex-nowrap justify-content-between align-items-center">
+                <div class="col-4 text-start ps-4"> <a class="link-secondary text-decoration-none" href="./index.html">Cancel</a> </div>
+                <div class="col-4 text-center"> <a class="blog-header-logo text-decoration-none text-white"
+                        href="#">New To Dos</a> </div>
+                <div class="col-4 pt-1 text-end"> <button class="btn btn-link text-decoration-none" onclick="addTask()">Save</button> </div>
+            </div>
+        </header>
+        <div class="container">
+        <div class="form-floating py-2">
+            <input type="text" class="form-control" id="floatingInput" placeholder="new-task">
+            <label for="floatingInput">New Task</label>
+        </div>
+        <div class="py-2">
+            <h5 class="py-2">Priority</h5>
+            <ul class="dropdown-menu d-block position-static mx-0 shadow">
+                <li>
+                    <label class="dropdown-item d-flex gap-2 align-items-center" style="cursor: pointer;">
+                        <input class="form-check-input flex-shrink-0" type="radio" name="priority" value="low"
+                            style="font-size: 1.25em;" />
+                        <span class="pt-1 form-checked-content">
+                            <i class="bi bi-diamond-fill ps-2" style="color: #2D41A7;"></i>
+                            <strong class="px-3">Low</strong>
+                        </span>
+                    </label>
+                </li>
+                <li>
+                    <label class="dropdown-item d-flex gap-2 align-items-center" style="cursor: pointer;">
+                        <input class="form-check-input flex-shrink-0" type="radio" name="priority" value="moderate"
+                            style="font-size: 1.25em;" />
+                        <span class="pt-1 form-checked-content">
+                            <i class="bi bi-diamond-fill ps-2" style="color: #ECB800;"></i>
+                            <strong class="px-3">Moderate</strong>
+                        </span>
+                    </label>
+                </li>
+                <li>
+                    <label class="dropdown-item d-flex gap-2 align-items-center" style="cursor: pointer;">
+                        <input class="form-check-input flex-shrink-0" type="radio" name="priority" value="high"
+                            style="font-size: 1.25em;" />
+                        <span class="pt-1 form-checked-content">
+                            <i class="bi bi-diamond-fill ps-2" style="color: #E42C5F;"></i>
+                            <strong class="px-3">High</strong>
+                        </span>
+                    </label>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="py-2">
+            <h5 class="py-2">Level of Efforts</h5>
+            <ul class="dropdown-menu d-block position-static mx-0 shadow">
+                <li>
+                    <label class="dropdown-item d-flex gap-2 align-items-center" style="cursor: pointer;">
+                        <input class="form-check-input flex-shrink-0" type="radio" name="effort" value="easy"
+                            style="font-size: 1.25em;" />
+                        <span class="pt-1 form-checked-content">
+                            <i class="bi bi-diamond-fill ps-2" style="color: #2D41A7"></i>
+                            <i class="bi bi-diamond" style="color: #2D41A7"></i>
+                            <i class="bi bi-diamond" style="color: #2D41A7"></i>
+                            <strong class="px-3">Easy</strong>
+                        </span>
+                    </label>
+                </li>
+                <li>
+                    <label class="dropdown-item d-flex gap-2 align-items-center" style="cursor: pointer;">
+                        <input class="form-check-input flex-shrink-0" type="radio" name="effort" value="medium"
+                            style="font-size: 1.25em;" />
+                        <span class="pt-1 form-checked-content">
+                            <i class="bi bi-diamond-fill ps-2" style="color: #2D41A7"></i>
+                            <i class="bi bi-diamond-fill" style="color: #2D41A7"></i>
+                            <i class="bi bi-diamond" style="color: #2D41A7"></i>
+                            <strong class="px-3">Medium</strong>
+                        </span>
+                    </label>
+                </li>
+                <li>
+                    <label class="dropdown-item d-flex gap-2 align-items-center" style="cursor: pointer;">
+                        <input class="form-check-input flex-shrink-0" type="radio" name="effort" value="hard"
+                            style="font-size: 1.25em;" />
+                        <span class="pt-1 form-checked-content">
+                            <i class="bi bi-diamond-fill ps-2" style="color: #2D41A7"></i>
+                            <i class="bi bi-diamond-fill" style="color: #2D41A7"></i>
+                            <i class="bi bi-diamond-fill" style="color: #2D41A7"></i>
+                            <strong class="px-3">Hard</strong>
+                        </span>
+                    </label>
+                </li>
+            </ul>
+        </div>
+
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous">
+        </script>
+    <script src="./add_script.js"></script>
+</body>
+
+</html>
