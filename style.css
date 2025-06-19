@@ -22,7 +22,7 @@ header{
     position: fixed;
     z-index: 1000;
     right: 20px;
-    top: 110px;
+    top: 100px;
   }
 .dropdown-content {
   display: none;
