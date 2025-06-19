@@ -88,6 +88,12 @@ function deleteTask(index) {
 function loadTasks() {
   listContainer.innerHTML = "";
   const tasks = JSON.parse(localStorage.getItem("tasks") || "[]");
+  if (tasks.length === 0) {
+    const label = document.createElement("div");
+    label.innerHTML = `<p class="text-secondary text-center">No tasks found. Create one now</p>`;
+    listContainer.appendChild(label);
+    return;
+  }
 
   const priorities = ["high", "moderate", "low"];
   priorities.forEach((priority) => {
@@ -113,8 +119,11 @@ function initSampleTasks() {
 
 document.addEventListener("DOMContentLoaded", () => {
   initSampleTasks();
-  loadTasks();
+  if (localStorage.getItem("tasks")) {
+    loadTasks();
+  }
 });
+
 
 function toggleDropdown() {
   const dropdown = document.getElementById("myDropdown");
