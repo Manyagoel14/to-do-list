@@ -1,16 +1,16 @@
-body{
-    background-color: #b1e1e4;
+body {
+  background-color: #b1e1e4;
 }
-.bod{
-    display: grid;
-    place-items: center;
-    margin:0;
-    padding: 10px;
+.bod {
+  display: grid;
+  place-items: center;
+  margin: 0;
+  padding: 10px;
 }
 
-header{
+header {
   background-color: #144a4d;
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   text-align: center;
 }
 .float {
@@ -22,61 +22,63 @@ header{
 }
 
 .calendar {
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    padding: 15px;
-    flex-direction: column;
-    border-radius: 15px;
+  font-family: "Times New Roman", Times, serif;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  flex-direction: column;
+  border-radius: 15px;
 }
 
-
-.header{
-    display: flex;
-    justify-content: space-between;
-    align-items:center;
-    padding:10px;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
 }
 
-.btn{
-    cursor: pointer;
-    color: black;
+.btn {
+  cursor: pointer;
+  color: black;
 }
 
-#month-year{
-    font-weight: bold;
+#month-year {
+  font-weight: bold;
 }
 
-.weekdays, .days{
-    display: flex;
-    flex-wrap: wrap;
+.weekdays,
+.days {
+  display: flex;
+  flex-wrap: wrap;
 }
-#days{
-    height:240px;
-}
-
-.weekdays div, .days div{
-    width: 14.28%;
-    text-align: center;
-    padding: 5px 0;
-    border-radius: 5px;
+#days {
+  height: 240px;
 }
 
-.days div{
-    cursor: pointer;
-    transition: background-color 0.3s;
+.weekdays div,
+.days div {
+  width: 14.28%;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 5px;
 }
 
-.days div:hover{
-    background-color: white;
-    color: orangered;
+.days div {
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-.days .today{
-    background-color: orangered;
-    color: white;
+.days div:hover {
+  background-color: white;
+  color: orangered;
 }
 
-.days .fade{
-    color: #555;
+.days .today {
+  background-color: orangered;
+  color: white;
+}
+
+.days .fade {
+  color: #555;
 }

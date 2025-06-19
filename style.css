@@ -1,12 +1,13 @@
-body{
+body {
   background-color: #b1e1e4;
+  font-family: "Times New Roman", Times, serif;
 }
-header{
+header {
   background-color: #144a4d;
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   text-align: center;
 }
-.float a{
+.float a {
   text-decoration: none;
 }
 .float {
@@ -15,15 +16,15 @@ header{
   top: 0;
   background-color: #1a5d61;
 }
-.form-check-input{
+.form-check-input {
   border-color: black;
 }
 .filter-btn {
-    position: fixed;
-    z-index: 1000;
-    right: 20px;
-    top: 100px;
-  }
+  position: fixed;
+  z-index: 1000;
+  right: 20px;
+  top: 100px;
+}
 .dropdown-content {
   display: none;
   position: fixed;
@@ -34,7 +35,7 @@ header{
   min-width: 160px;
   padding: 10px;
   border: 1px solid #ccc;
-  box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   background-color: #144a4d;
   color: white;
@@ -46,44 +47,42 @@ header{
 }
 
 .floating-btn {
-    position: fixed;
-    bottom: 10%;
-    right: 20px;
-    z-index: 1000;
-  }
+  position: fixed;
+  bottom: 10%;
+  right: 20px;
+  z-index: 1000;
+}
 
-.delete{
+.delete {
   font-size: 1.75rem;
 }
 
-.edit{
+.edit {
   font-size: 1.75rem;
 }
 .task-container {
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.apply-btn{
+.apply-btn {
   align-items: end;
   background-color: #ffc107;
   border-radius: 5px;
   border-width: 0;
-  color:white;
-  
+  color: white;
 }
 
-.dropdown-btn{
+.dropdown-btn {
   border-radius: 5px;
   border-width: 0px;
   background-color: #144a4d;
   color: white;
 }
 
-.help{
+.help {
   background-color: #1a5d61;
   position: fixed;
   bottom: 0;
   width: 100%;
 }
-
