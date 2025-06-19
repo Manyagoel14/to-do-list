@@ -16,7 +16,7 @@ function createTaskElement(taskData, index) {
   // Effort level indicators
   const effortPencil = {
     easy: `<i class="bi bi-pencil-fill ps-2" style="color: ${pencilColor}"></i>
-               <i class="bi bi-pencil-fill" style="color: ${pencilColor}"></i>
+               <i class="bi bi-pencil" style="color: ${pencilColor}"></i>
                <i class="bi bi-pencil" style="color: ${pencilColor}"></i>`,
 
     medium: `<i class="bi bi-pencil-fill ps-2" style="color: ${pencilColor}"></i>
