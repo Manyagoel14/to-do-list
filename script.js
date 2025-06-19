@@ -2,7 +2,7 @@ const listContainer = document.getElementById("list-group");
 
 function createTaskElement(taskData, index) {
     const container = document.createElement("div");
-    container.className = "list-group-item d-flex justify-content-between align-items-center gap-3 mb-2";
+    container.className = "list-group-item d-flex align-items-center gap-2 mb-2";
 
     // Set background color based on priority
     const priorityColors = {
@@ -47,7 +47,7 @@ function createTaskElement(taskData, index) {
                 ${effortDiamonds[taskData.effort] || effortDiamonds.medium}
             </small>
         </div>
-        <div class="d-flex align-items-end">
+        <div class="d-flex align-items-end col-2">
             <i class="bi bi-pencil-square text-warning me-2" style="cursor: pointer; font-size: 1.2rem;" onclick="editTask(${index})"></i>
             <i class="bi bi-x-circle-fill text-danger" style="cursor: pointer; font-size: 1.2rem;" onclick="deleteTask(${index})"></i>
         </div>
