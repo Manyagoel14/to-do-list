@@ -34,7 +34,7 @@ function createTaskElement(taskData, index) {
 
     // HTML inside container
     container.innerHTML = `
-        <div class="col-3 d-flex gap-3 align-items-center">
+        <div class="col-6 d-flex gap-3 align-items-center">
             <input class="form-check-input flex-shrink-0" type="checkbox"
                 ${taskData.completed ? "checked" : ""}
                 style="font-size: 1.375em;"
@@ -47,7 +47,7 @@ function createTaskElement(taskData, index) {
                 ${effortDiamonds[taskData.effort] || effortDiamonds.medium}
             </small>
         </div>
-        <div class="d-flex gap-3 align-items-end">
+        <div class="d-flex align-items-end">
             <i class="bi bi-pencil-square text-warning me-2" style="cursor: pointer; font-size: 1.2rem;" onclick="editTask(${index})"></i>
             <i class="bi bi-x-circle-fill text-danger" style="cursor: pointer; font-size: 1.2rem;" onclick="deleteTask(${index})"></i>
         </div>
