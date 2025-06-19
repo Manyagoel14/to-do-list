@@ -47,7 +47,7 @@ header{
 
 .floating-btn {
     position: fixed;
-    bottom: 45px;
+    bottom: 10%;
     right: 20px;
     z-index: 1000;
   }
